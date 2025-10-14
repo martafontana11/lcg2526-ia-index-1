@@ -99,3 +99,14 @@ function draw() {
   // tempo += 1;
 
 }
+
+//callback
+function mousePressed(){
+  // fermiamo l'animazione o la rifacciamo partire
+  //se clicchiamo il mouse
+  if(isLooping()){
+    noLoop();
+  }else{
+    loop();
+  }
+}
