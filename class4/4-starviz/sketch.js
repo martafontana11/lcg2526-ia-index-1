@@ -14,7 +14,7 @@ let stdDevSize;
 function filterStarSize(value){ // in realtà il nome corretto è isStarSizeValid
   // se il dato ingresso è corretto o meno, restituire una booleano
   return value > 0;
-}
+  }
 
 
 function preload() {
@@ -31,8 +31,10 @@ function ruleOne(value){
 function setup() {
   createCanvas(xMax, yMax);
   frameRate(30);
+  // filtrare i dati
+  // lo facciamo in setup perchè deve essere eseguito solo una volta
   //prefiltering
-  for(let i = 0; i < table.getRowCount();i++){
+  for(let i = 0; i < table.getRowCount();i++){ // ciclo per scorrere tra le righe del dataset
     let starVal = table.getNum(i, "starSize");
     if(ruleOne(starVal)){
      star_values.push(starVal);
