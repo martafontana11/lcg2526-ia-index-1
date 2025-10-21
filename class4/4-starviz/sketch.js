@@ -11,6 +11,11 @@ let star_values= [];
 let meanSize;
 let stdDevSize;
 
+function filterStarSize(value){ // in realtà il nome corretto è isStarSizeValid
+  // se il dato ingresso è corretto o meno, restituire una booleano
+  return value > 0;
+}
+
 
 function preload() {
   table = loadTable("stars.csv", "csv", "header");
