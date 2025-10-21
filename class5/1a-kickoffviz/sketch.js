@@ -17,8 +17,8 @@ function isStarSizeValid(value){
 
 //caricare asset prima che la pagina web venga caricata
 function preload() {
-  table = loadTable("stars.csv", "csv", "header");
-  star_img = loadImage("star.png");
+  table = loadTable("../assets/datasets/stars.csv", "csv", "header");
+  star_img = loadImage("../assets/img/star.png");
 }
 
 
